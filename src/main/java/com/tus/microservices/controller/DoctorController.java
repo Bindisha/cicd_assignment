@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.tus.microservices.model.DoctorRecord;
 import com.tus.microservices.model.Specialization;
 import com.tus.microservices.service.DoctorService;
-import com.tus.microservices.service.PatientClient;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -31,9 +30,7 @@ public class DoctorController {
 	@Autowired
 	private DoctorService doctorService;
 	
-	@Autowired
-	private PatientClient patientClient;
-	
+		
 	@GetMapping("/test")
 	public String sayHello() {
 		log.info("Doctor logs");
